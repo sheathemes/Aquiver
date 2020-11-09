@@ -52,7 +52,7 @@ CREDITS
 <!--Homelinks Icons-->
 <link rel="stylesheet" href="https://static.tumblr.com/i5s2zks/6kOohwlux/pe-icon-7-stroke.css">
 <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-<link href="//dl.dropbox.com/s/50g6fbds3rh4m0j/saturnicons.css" rel="stylesheet">
+<link href="//solrainha.github.io/saturnicons/saturnicons.css" rel="stylesheet">
 <!--Homelinks Icons-->
 
  
@@ -717,12 +717,10 @@ figcaption p {
  
 #topinfo img {
     margin-right: 7px;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     display: inline-block;
     vertical-align: middle;
-    border-radius: 100%;
-    border: 5px solid {color:accent};
     border-radius: 100%;
 }
  
@@ -1519,6 +1517,39 @@ figcaption p {
     text-align: {select:desc text align};
 }
 
+#bottom {
+    bottom: 9px;
+    position: fixed;
+    right: 30px;
+    z-index: 99;
+}
+ 
+#bottom a:hover {
+    color: {color:permalink hover};
+}
+ 
+.cred {
+    padding: 5px;
+    width: 12px;
+    height: 12px;
+    font-size: 15px;
+    line-height: 12px;
+    display: inline-block;
+    background-color: {color:accent};
+    color: {color:accented text};
+}
+ 
+.sf-arrow-up {
+    padding: 5px;
+    width: 15px;
+    height: 12px;
+    font-size: 15px;
+    line-height: 12px;
+    display: block;
+    background-color: {color:accent};
+    color: {color:accented text};
+}
+ 
 /*----------SCROLL TO TOP---------*/
  
 #scrollToTop:link,
@@ -1526,27 +1557,13 @@ figcaption p {
     display: none;
     position: fixed;
     font-size: 12px;
-    bottom: 15px;
-    right: 20px;
-    color: {color:links};
+    bottom: 10px;
+    right: 53px;
+    color: {color:accented text};
     padding: 0px 5px;
     width: auto;
     z-index: 900;
     font-weight: 700;
-}
- 
-/*----------THEME CREDIT/DO NOT REMOVE!!!---------*/
- 
-.cred {
-    position: fixed;
-    bottom: 32px;
-    right: 32px;
-    z-index: 9999;
-}
- 
-.cred img {
-    width: 40px;
-    height: 40px;
 }
 
 {CustomCSS}
@@ -1584,9 +1601,14 @@ figcaption p {
 
 <body>
 
+<footer id="bottom">
 <!-----------SCROLL TO TOP ----------->
-<a href="javascript:;" id="scrollToTop" rel="nofollow" title="scroll to top">go to top</a>
+<a href="javascript:;" id="scrollToTop" rel="nofollow" title="scroll to top"><i class="sf-arrow-up"></i></a>
 <!-----------SCROLL TO TOP ----------->
+<!-------------------DO NOT REMOVE THEME CREDIT!!!------------------->
+ <a href="https://sheathemes.tumblr.com" class="cred" title="theme by sheathemes">&#169;</a>  
+<!-------------------DO NOT REMOVE THEME CREDIT!!!------------------->
+</footer>
 
 <div class="wrap"> <!-----------POST CONTAINER----------->
 <section class="container"></section>
@@ -1913,7 +1935,7 @@ width="{LogoWidth}" height="{LogoHeight}" alt="{SourceTitle}" />
 
 {block:IndexPage}
 {block:Date}
-<div class="time"><span class="sf-push-pin" style="margin-right:5px;color:{color:accent};"></span>
+<div class="time"><span class="sf-push-pin-o" style="margin-right:5px;color:{color:accent};"></span>
 <a class="timestamp" href="{Permalink}" title="{ShortMonth} {DayOfMonthWithZero}, {Year}">{Timestamp}</a>{/block:Date}
 
 <div class="likereblog" style="float:right;">
@@ -1992,10 +2014,6 @@ Posted {ShortMonth} {DayOfMonthWithZero}, {Year} @ {12Hour} {AmPm}
 </section><!------------------POSTS WRAPPER----------------------->
 
 </div>  <!--------- POSTS CONTAINER ----------->
-
-<!-------------------DO NOT REMOVE THEME CREDIT!!!------------------->
-<a href="https://sheathemes.tumblr.com" class="cred" title="theme by sheathemes"><img src="https://static.tumblr.com/mans3zn/0xXowi0nk/credit.png"></a>
-<!-------------------DO NOT REMOVE THEME CREDIT!!!------------------->
 
 <!-------------------SCRIPTS/JQUERY (PART TWO)------------------->
  
